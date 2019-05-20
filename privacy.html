@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- STYLES -->
+    <link rel="dns-prefetch" href="./images/Index-1.png"/>
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Невская палитра</title>
+  </head>
+  <body>
+  
+    <div id="webpage">
+
+      <!-- MODAL START -->
+      <div class="modal-wrapper">
+        <div class="modal resume-modal">
+          <span class="close-modal">&times;</span>
+          <div class="modal-body">
+            <div class="modal-top">
+              <h5>Отправьте резюме</h5>
+              <p>Мы свяжемся с вами, если будем готовы пригласить на собеседование</p>
+            </div>
+            <form class="modal-form">
+              <input hidden class="input-vacancy" type="text" value="foobar">
+              <div class="form-group"><input name="vacancy-name" type="text" placeholder="Имя"></div>
+              <div class="form-group"><input name="vacancy-email" type="email" placeholder="Эл. почта"></div>
+              <div class="form-group"><input name="vacancy-tel" type="tel" placeholder="Телефон"></div>
+              <div class="form-group-flexed">
+                <div class="form-group"><input name="vacancy-link" type="text" placeholder="Ссылка на резюме"></div>
+                <div class="form-group">
+                  <span class="fake-input">Прикрепить файл</span>
+                  <input class="form-file" name="vacancy-file" id="resume-file" type="file" hidden>
+                  <label for="resume-file" class="btn bg-red"></label>
+                </div>
+              </div>
+              <div class="form-group"><textarea name="vacancy-text" placeholder="Сопроводительное письмо"></textarea></div>
+              <div class="form-group">
+                <div class="footer-privacy centered">
+                    Нажимая «Отправить»‎, вы соглашаетеесь с <a href="./privacy">Политикой конфиденциальности</a> и обработкой персональных данных
+                </div>
+              </div>
+              <div class="form-group"><button class="btn btn-wide bg-red centered" type="submit"><span>Отправить</span></button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
+
+      <!-- HEADER START -->
+      <header class="page-header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="/" class="header-logo">
+              <img src="./images/logo-rus.svg" alt="Невская палитра" />
+            </a>
+            <nav class="header-nav">
+              <ul class="header-menu">
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./catalog.html">Каталог</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Краски</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Разбавители</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Масла</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Кисти</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./brands.html">Бренды</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./club.html">Клуб художников</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="./lessons.html" class="header-submenu-link">Мастер-классы</a></li>
+                    <li class="header-submenu-iten"><a href="./media.html" class="header-submenu-link">Медиа</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Социальные проекты</a></li>
+                    <li class="header-submenu-iten"><a href="./colors.html" class="header-submenu-link">Выкрасы</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Расписание мероприятий</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./about.html">О компании</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="./contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header-actions">
+              <form class="header-search">
+                <button class="header-search-button"></button>
+                <div class="input-wrapper with-stroke">
+                  <input class="header-search-field" type="text" />
+                </div>
+              </form>
+              <div class="select-lang">
+                <span class="select-lang-selected with-arrow">ru</span>
+                <div class="select-lang-options">
+                  <a href="/" data-option="ru" class="select-lang-option">ru</a> 
+                  <a href="/" data-option="en" class="select-lang-option">en</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+
+      <main class="page-main">
+
+        <section class="page-section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="section-title">
+                <h2>Политика конфиденциальности<br />и правила обработки персональных данных</h2>
+              </div>
+              <div class="index-catalog colored-grey">
+                  <p>
+                      1. Общие положения<br />
+                      Настоящая политика обработки персональных данных составлена в&nbsp;соответствии с&nbsp;требованиями Федерального закона от&nbsp;27.07.2006. &#8470;&nbsp;152-ФЗ &laquo;О&nbsp;персональных данных&raquo; и&nbsp;определяет порядок обработки персональных данных и&nbsp;меры по&nbsp;обеспечению безопасности персональных данных Завод художественных красок &laquo;Невская палитра&raquo; (далее&nbsp;&mdash; Оператор).<br />
+                      Оператор ставит своей важнейшей целью и&nbsp;условием осуществления своей деятельности соблюдение прав и&nbsp;свобод человека и&nbsp;гражданина при обработке его персональных данных, в&nbsp;том числе защиты прав на&nbsp;неприкосновенность частной жизни, личную и&nbsp;семейную тайну.<br />
+                      Настоящая политика Оператора в&nbsp;отношении обработки персональных данных (далее&nbsp;&mdash; Политика) применяется ко&nbsp;всей информации, которую Оператор может получить о&nbsp;посетителях веб-сайта <a href="/">http://nevskayapalitra.ru.</a>
+                      </p>
+                      
+                      <p>
+                      2. Основные понятия, используемые в&nbsp;Политике<br />
+                      Автоматизированная обработка персональных данных&nbsp;&mdash; обработка персональных данных с&nbsp;помощью средств вычислительной техники;
+                      Блокирование персональных данных&nbsp;&mdash; временное прекращение обработки персональных данных (за&nbsp;исключением сл&nbsp;учаев, если обработка необходима для уточнения персональных данных);<br />
+                      Веб-сайт&nbsp;&mdash; совокупность графических и&nbsp;информационных материалов, а&nbsp;также программ для ЭВМ и&nbsp;баз данных, обеспечивающих их&nbsp;доступность в&nbsp;сети интернет по&nbsp;сетевому адресу <a href="/">http://nevskayapalitra.ru</a>;<br />
+                      Информационная система персональных данных&nbsp;&mdash; совокупность содержащихся в&nbsp;базах данных пе&nbsp;рсональных данных, и&nbsp;обеспечивающих их&nbsp;обработку информационных технологий и&nbsp;технических средств;<br />
+                      Обезличивание персональных данных&nbsp;&mdash; действия, в&nbsp;результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;<br />
+                      Обработка персональных данных&nbsp;&mdash; любое действие (операция) или совокупность действий (операций), совершаемых с&nbsp;использованием средств автоматизации или без использования таких средств с&nbsp;персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;
+                      Оператор&nbsp;&mdash; государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с&nbsp;другими лицами организующие&nbsp;и (или) осуществляющие обработку персональных данных, а&nbsp;также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с&nbsp;персональными данными;<br />
+                      Персональные данные&nbsp;&mdash; любая информация, относящаяся прямо или косвенно к&nbsp;определенному или определяемому Пользователю веб-сайта <a href="/">http://nevskayapalitra.ru</a>;
+                      Пользователь&nbsp;&mdash; любой посетитель веб-сайта <a href="http://nevskayapalitra.ru"></a>;<br />
+                      Предоставление персональных данных&nbsp;&mdash; действия, направленные на&nbsp;раскрытие персональных данных определенному лицу или определенному кругу лиц;
+                      Распространение персональных данных&nbsp;&mdash; любые действия, направленные на&nbsp;раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на&nbsp;ознакомление с&nbsp;персональными данными неограниченного круга лиц, в&nbsp;том числе обнародование персональных данных в&nbsp;средствах массовой информации, размещение в&nbsp;информационно-телекоммуникационных сетях или предоставление доступа к&nbsp;персональным данным каким-либо иным способом;
+                      Трансграничная передача персональных данных&nbsp;&mdash; передача персональных данных на&nbsp;территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;<br />
+                      Уничтожение персональных данных&nbsp;&mdash; любые действия, в&nbsp;результате которых персональные данные уничтожаются безвозвратно с&nbsp;невозможностью дальнейшего восстановления содержания персональных данных в&nbsp;информационной системе персональных данных&nbsp;и (или) результате которых уничтожаются материальные носители персональных данных.
+                      </p>
+                      
+                      <p>
+                      3. Оператор может обрабатывать следующие персональные данные Пользователя<br />
+                      Фамилия, имя, отчество;<br />
+                      Электронный адрес;<br />
+                      Номера телефонов;<br />
+                      Также на&nbsp;сайте происходит сбор и&nbsp;обработка обезличенных данных о&nbsp;посетителях (в&nbsp;т.ч. файлов &laquo;cookie&raquo;) с&nbsp;помощью сервисов интернет-статистики (Яндекс Метрика и&nbsp;Гугл Аналитика и&nbsp;других).<br />
+                      Вышеперечисленные данные далее по&nbsp;тексту Политики объединены общим понятием Персональные данные.
+                      </p>
+                      
+                      <p>
+                      4. Цели обработки персональных данных<br />
+                      Цель обработки персональных данных Пользователя&nbsp;&mdash; информирование Пользователя посредством отправки электронных писем.<br />
+                      Также Оператор имеет право направлять Пользователю уведомления о&nbsp;новых продуктах и&nbsp;услугах, специальных предложениях и&nbsp;различных событиях. Пользователь всегда может отказаться от&nbsp;получения информационных сообщений, направив Оператору письмо на&nbsp;адрес электронной почты info@nevskayapalitra.ru с&nbsp;пометкой &laquo;Отказ от&nbsp;уведомлениях о&nbsp;новых продуктах и&nbsp;услугах и&nbsp;специальных предложениях&raquo;.<br />
+                      Обезличенные данные Пользователей, собираемые с&nbsp;помощью сервисов интернет-статистики, служат для сбора информации о&nbsp;действиях Пользователей на&nbsp;сайте, улучшения качества сайта и&nbsp;его содержания.
+                      </p>
+                      
+                      <p>
+                      5. Правовые основания обработки персональных данных<br />
+                      Оператор обрабатывает персональные данные Пользователя только в&nbsp;случае их&nbsp;заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на&nbsp;сайте <a href="/">http://nevskayapalitra.ru</a>. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с&nbsp;данной Политикой.<br />
+                      Оператор обрабатывает обезличенные данные о&nbsp;Пользователе в&nbsp;случае, если это разрешено в&nbsp;настройках браузера Пользователя (включено сохранение файлов &laquo;cookie&raquo; и&nbsp;использование технологии JavaScript).
+                      </p>
+                      
+                      <p>
+                      6. Порядок сбора, хранения, передачи и&nbsp;других видов обработки персональных данных<br />
+                      Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и&nbsp;технических мер, необходимых для выполнения в&nbsp;полном объеме требований действующего законодательства в&nbsp;области защиты персональных данных.<br />
+                      Оператор обеспечивает сохранность персональных данных и&nbsp;принимает все возможные меры, исключающие доступ к&nbsp;персональным данным неуполномоченных лиц.
+                      Персональные данные Пользователя никогда, ни&nbsp;при каких условиях не&nbsp;будут переданы третьим лицам, за&nbsp;исключением случаев, связанных с&nbsp;исполнением действующего законодательства.<br />
+                      В&nbsp;случае выявления неточностей в&nbsp;персональных данных, Пользователь может актуализировать их&nbsp;самостоятельно, путем направления Оператору уведомление на&nbsp;адрес электронной почты Оператора info@nevskayapalitra.ru с&nbsp;пометкой &laquo;Актуализация персональных данных&raquo;.<br />
+                      Срок обработки персональных данных является неограниченным. Пользователь может в&nbsp;любой момент отозвать свое согласие на&nbsp;обработку персональных данных, направив Оператору уведомление посредством электронной почты на&nbsp;электронный адрес Оператора info@nevskayapalitra.ru с&nbsp;пометкой &laquo;Отзыв согласия на&nbsp;обработку персональных данных&raquo;.
+                      </p>
+                      
+                      <p>
+                      7. Трансграничная передача персональных данных<br />
+                      Оператор до&nbsp;начала осуществления трансграничной передачи персональных данных обязан убедиться в&nbsp;том, что иностранным государством, на&nbsp;территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.<br />
+                      Трансграничная передача персональных данных на&nbsp;территории иностранных государств, не&nbsp;отвечающих вышеуказанным требованиям, может осуществляться только в&nbsp;случае наличия согласия в&nbsp;письменной форме субъекта персональных данных на&nbsp;трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.
+                      </p>
+                      
+                      <p>
+                      8. Заключительные положения<br />
+                      Пользователь может получить любые разъяснения по&nbsp;интересующим вопросам, касающимся обработки его персональных данных, обратившись к&nbsp;Оператору с&nbsp;помощью электронной почты info@nevskayapalitra.ru.<br />
+                      В&nbsp;данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до&nbsp;замены ее&nbsp;новой версией.
+                      Актуальная версия Политики в&nbsp;свободном доступе расположена в&nbsp;сети Интернет по&nbsp;адресу <a href="./privacy.html">http://nevskayapalitra.ru/privacypolicy</a>
+                      </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER START -->
+      <footer class="page-footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="footer-logo"><img src="./images/logo-rus.svg" alt="Невская палитра"></div>
+              <nav class="footer-nav">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">О компании</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Каталог</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Бренды</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Партнерам</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Клуб художников</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Новости</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Контакты</a></li>
+                  <li class="footer-menu-item">
+                    <div class="socials">
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="footer-bottom-left">
+                <span class="copyright">&copy; 2005—2019 Завод художественных красок «Невская палитра»</span>
+                <a class="madeby" href="">
+                  <img src="./images/logo_kdm.svg" alt="Клиника доброго маркетолога">
+                  <span>Сделано в&nbsp;&laquo;Клинике доброго маркетолога&raquo;</span>
+                </a>
+              </div>
+              <div class="footer-bottom-right">
+                <form class="mailing-form">
+                  <input type="email" placeholder="Эл. почта">
+                  <button class="btn btn-wide bg-red" type="submit"><span>Подписаться на рассылку</span></button>
+                </form>
+                <span class="footer-privacy">Нажимая «Подписаться»‎, вы соглашаетеесь с <a href="#">Политикой конфиденциальности</a> и обработкой персональных данных</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

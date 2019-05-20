@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- STYLES -->
+    <link rel="dns-prefetch" href="./images/Index-1.png"/>
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Невская палитра</title>
+  </head>
+  <body>
+    <!-- <button class="btn bg-red"></button>
+  <button class="btn bg-blue"></button>
+  <button class="btn bg-green"></button>
+  <button class="btn bg-orange"></button>
+  <button class="btn btn-wide bg-orange"><span>Смотреть каталог</span></button> -->
+
+    <div id="webpage">
+
+      <!-- MODAL START -->
+      <div class="modal-wrapper">
+        <span class="close-modal">&times;</span>
+        <div class="modal modal-review">
+          <div class="modal-body">
+            <div class="modal-top">
+              <h5>Спасибо, ваш отзыв отправлен</h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal-subscription">
+          <div class="modal-body">
+            <div class="modal-top">
+              <h5>Спасибо за подписку!</h5>
+              <p><a href="#">Отписаться</a> можно в любой момент</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
+
+      <!-- HEADER START -->
+      <header class="page-header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="/" class="header-logo">
+              <img src="./images/logo-rus.svg" alt="Невская палитра" />
+            </a>
+            <nav class="header-nav">
+              <ul class="header-menu">
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./catalog.html">Каталог</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Краски</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Разбавители</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Масла</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Кисти</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./brands.html">Бренды</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./club.html">Клуб художников</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="./lessons.html" class="header-submenu-link">Мастер-классы</a></li>
+                    <li class="header-submenu-iten"><a href="./media.html" class="header-submenu-link">Медиа</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Социальные проекты</a></li>
+                    <li class="header-submenu-iten"><a href="./colors.html" class="header-submenu-link">Выкрасы</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Расписание мероприятий</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./about.html">О компании</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="./contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header-actions">
+              <form class="header-search">
+                <button class="header-search-button"></button>
+                <div class="input-wrapper with-stroke">
+                  <input class="header-search-field" type="text" />
+                </div>
+              </form>
+              <div class="select-lang">
+                <span class="select-lang-selected with-arrow">ru</span>
+                <div class="select-lang-options">
+                  <a href="/" data-option="ru" class="select-lang-option">ru</a> 
+                  <a href="/" data-option="en" class="select-lang-option">en</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+
+      <main class="page-main">
+
+        <div class="breadcrumbs-wrapper">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item"><a href="./catalog.html">Каталог</a></li>
+              <li class="breadcrumbs-item"><a href="./catalog-inner.html">Акриловые краски</a></li>
+              <li class="breadcrumbs-item current"><span>Неаполитанская телесная</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="page-section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="paint-description">
+                <div class="paint-description-image"><img class="olazy" data-src="./images/paints/paint_item.png" alt="Розовый хинакридон Масляная краска"></div>
+                <div class="paint-description-body">
+                  <h1>Розовый хинакридон<br />Масляная краска</h1>
+                  <p>
+                    Подходят для художественных и&nbsp;дизайнерских работ. Ровно ложатся на&nbsp;бумагу, холст, дерево, картон. Краска обладает превосходной укрывистостью, блеском, сохраняет интенсивность и&nbsp;глубину цвета после высыхания
+                  </p>
+
+                  <div class="paint-description-composition">
+                    <h3>Состав:</h3>
+                    <p>органический пигмент, очищенная от тяжелых металлов и посторонних примесей вода, связующее вещество - смола сибирской сосны</p>
+                  </div>
+
+                  <div class="paint-description-links">
+                    <a class="btn btn-wide bg-red" href="./colors.html"><span>Выкрасы</span></a>
+                    <a class="btn btn-wide bg-red" href="./lessons.html"><span>Мастер-классы с товаром</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="paint-reviews">
+                <h2>Отзывы</h2>
+                <div class="reviews-slider simple-slider">
+                  <div class="reviews-slider-item">
+                    <div class="slider-item-image"><img data-lazy="./images/reviews/review_image.jpg" alt="Сергей Лысый, акварелист"></div>
+                    <div class="slider-item-body">
+                      <p>
+                        Я вырос на красках «Невской палитры». Учились в институте (художником не сразу стал) и набор заветный пластмассовый с собой всегда таскал. В лет сорок я понял, что всё-таки художник во мне побеждает, я опять вернулся к краскам «Невской палитры». На сегодняшний день многое изменилось в технологии красок и материалов, но «Белыми ночами» я пользуюсь с удовольствием. В моей палитре постоянно присутствуют любимые цвета: индиго для меня номер 1, вся земляная группа, алый!
+                      </p>
+                      <h3>Сергей Лысый, акварелист</h3>
+                    </div>
+                  </div>
+                  <div class="reviews-slider-item">
+                    <div class="slider-item-image"><img data-lazy="./images/reviews/review_image_1.jpg" alt="Сергей Лысый, акварелист"></div>
+                    <div class="slider-item-body">
+                      <p>
+                        Могу сказать, что это самые легкие краски, которые я когда-либо пробовал, и что, если художник решает нанести краску в несколько слоев, они схватываются самым естественным образом, не теряя свежести, свойственной акварели. Эффекты, которые эти пигменты создают, совершенно экстремальные. Краски «слушались» меня, и мне было очень комфортно работать с ними, а ошибки минимальные – не получилось только с зеленым цветом, с которым я не совсем «попал»
+                      </p>
+                      <h3>Хелидон Халити, акварелист</h3>
+                    </div>
+                  </div>
+                  <div class="reviews-slider-item">
+                    <div class="slider-item-image"><img data-lazy="./images/reviews/review_image.jpg" alt="Сергей Лысый, акварелист"></div>
+                    <div class="slider-item-body">
+                      <p>
+                        Я вырос на красках «Невской палитры». Учились в институте (художником не сразу стал) и набор заветный пластмассовый с собой всегда таскал. В лет сорок я понял, что всё-таки художник во мне побеждает, я опять вернулся к краскам «Невской палитры». На сегодняшний день многое изменилось в технологии красок и материалов, но «Белыми ночами» я пользуюсь с удовольствием. В моей палитре постоянно присутствуют любимые цвета: индиго для меня номер 1, вся земляная группа, алый!
+                      </p>
+                      <h3>Сергей Лысый, акварелист</h3>
+                    </div>
+                  </div>
+                  <div class="reviews-slider-item">
+                    <div class="slider-item-image"><img data-lazy="./images/reviews/review_image_1.jpg" alt="Сергей Лысый, акварелист"></div>
+                    <div class="slider-item-body">
+                      <p>
+                        Могу сказать, что это самые легкие краски, которые я когда-либо пробовал, и что, если художник решает нанести краску в несколько слоев, они схватываются самым естественным образом, не теряя свежести, свойственной акварели. Эффекты, которые эти пигменты создают, совершенно экстремальные. Краски «слушались» меня, и мне было очень комфортно работать с ними, а ошибки минимальные – не получилось только с зеленым цветом, с которым я не совсем «попал»
+                      </p>
+                      <h3>Хелидон Халити, акварелист</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="simple-slider-wrapper">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section review-section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="section-title">
+                <h2>Делитесь впечатлениями</h2>
+                <p>
+                  Мы&nbsp;ценим мнение всех, кто работает с&nbsp;нашей продукцией. <br />
+                  Смело задавайте любые вопросы, обращайтесь с&nbsp;предложениями, <br /> 
+                  оставляйте отзывы&nbsp;&mdash; мы&nbsp;уделим внимание каждому
+                </p>
+              </div>
+              <form class="page-form review-form">
+                <div class="form-group"><input type="text" placeholder="Имя"></div>
+                <div class="form-group"><input type="email" placeholder="Эл. почта"></div>
+                <div class="form-group">
+                  <textarea placeholder="Комментарий"></textarea>
+                </div>
+                <div class="form-group">
+                  <span class="footer-privacy">
+                      Нажимая «Отправить»‎, вы соглашаетеесь с <a href="./privacy.html">Политикой конфиденциальности</a> и обработкой персональных данных
+                  </span>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-wide bg-red" type="submit">
+                    <span>Отправить</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section recomendation-section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="section-title">
+                <h2>Персональные рекомендации</h2>
+              </div>
+              <div class="index-catalog">
+                <div class="row">
+                  <div class="col-4to12">
+                    <div class="card-wrapper scalabel-hover">
+                      <div class="card">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/cards/card_splash_red.png"
+                            alt="Краски"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./catalog-inner.html">Кисть щетина</a></h3>
+                          <p>
+                            Предназначена для работы с тяжелыми красками: маслом, акрилом, темперой, гаушью.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4to12">
+                    <div class="card-wrapper scalabel-hover">
+                      <div class="card">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/cards/card_splash_red.png"
+                            alt="Краски"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./catalog-inner.html">Бумага для акрила</a></h3>
+                          <p>
+                            Производится без применения отбеливателей, сохраняет качество в течение многих лет
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4to12">
+                    <div class="card-wrapper scalabel-hover">
+                      <div class="card">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/cards/card_splash_red.png"
+                            alt="Краски"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./catalog-inner.html">Палитра</a></h3>
+                          <p>
+                              Деревянная палитра с противовесом и отверстием под большой палец
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4to12">
+                    <div class="card-wrapper scalabel-hover">
+                      <div class="card">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/cards/card_splash_red.png"
+                            alt="Краски"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./catalog-inner.html">Травяная зеленая</a></h3>
+                          <p>
+                            Художественная масляныя краска высшего качества, подходит для реставрационных работ
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER START -->
+      <footer class="page-footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="footer-logo"><img src="./images/logo-rus.svg" alt="Невская палитра"></div>
+              <nav class="footer-nav">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">О компании</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Каталог</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Бренды</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Партнерам</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Клуб художников</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Новости</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Контакты</a></li>
+                  <li class="footer-menu-item">
+                    <div class="socials">
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="footer-bottom-left">
+                <span class="copyright">&copy; 2005—2019 Завод художественных красок «Невская палитра»</span>
+                <a class="madeby" href="">
+                  <img src="./images/logo_kdm.svg" alt="Клиника доброго маркетолога">
+                  <span>Сделано в&nbsp;&laquo;Клинике доброго маркетолога&raquo;</span>
+                </a>
+              </div>
+              <div class="footer-bottom-right">
+                <form class="mailing-form">
+                  <input type="email" placeholder="Эл. почта">
+                  <button class="btn btn-wide bg-red" type="submit"><span>Подписаться на рассылку</span></button>
+                </form>
+                <span class="footer-privacy">Нажимая «Подписаться»‎, вы соглашаетеесь с <a href="#">Политикой конфиденциальности</a> и обработкой персональных данных</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

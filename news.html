@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- STYLES -->
+    <link rel="dns-prefetch" href="./images/Index-1.png"/>
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bower_components/slick-carousel/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Невская палитра</title>
+  </head>
+  <body>
+    <!-- <button class="btn bg-red"></button>
+  <button class="btn bg-blue"></button>
+  <button class="btn bg-green"></button>
+  <button class="btn bg-orange"></button>
+  <button class="btn btn-wide bg-orange"><span>Смотреть каталог</span></button> -->
+
+    <div id="webpage">
+
+      <!-- HEADER START -->
+      <header class="page-header">
+        <div class="container">
+          <div class="header-inner">
+            <a href="/" class="header-logo">
+              <img src="./images/logo-rus.svg" alt="Невская палитра" />
+            </a>
+            <nav class="header-nav">
+              <ul class="header-menu">
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./catalog.html">Каталог</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Краски</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Разбавители</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Масла</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Кисти</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./brands.html">Бренды</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./club.html">Клуб художников</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="./lessons.html" class="header-submenu-link">Мастер-классы</a></li>
+                    <li class="header-submenu-iten"><a href="./media.html" class="header-submenu-link">Медиа</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Социальные проекты</a></li>
+                    <li class="header-submenu-iten"><a href="./colors.html" class="header-submenu-link">Выкрасы</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Расписание мероприятий</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item ">
+                  <a class="header-menu-link with-arrow" href="./about.html">О компании</a>
+                  <ul class="header-submenu">
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 1</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 2</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 3</a></li>
+                    <li class="header-submenu-iten"><a href="#" class="header-submenu-link">Каталог 4</a></li>
+                  </ul>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="./contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="header-actions">
+              <form class="header-search">
+                <button class="header-search-button"></button>
+                <div class="input-wrapper with-stroke">
+                  <input class="header-search-field" type="text" />
+                </div>
+              </form>
+              <div class="select-lang">
+                <span class="select-lang-selected with-arrow">ru</span>
+                <div class="select-lang-options">
+                  <a href="/" data-option="ru" class="select-lang-option">ru</a> 
+                  <a href="/" data-option="en" class="select-lang-option">en</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+
+      <main class="page-main">
+        
+        <section class="page-section">
+          <div class="container">
+            <div class="section-inner">
+              <div class="section-title">
+                <h2>Новости</h2>
+              </div>
+              <div class="index-catalog">
+                <div class="row">
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_1.jpg"
+                            alt="8 новых цветов масляных красок"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">8 новых цветов масляных красок</a></h3>
+                          <p>
+                            Предназначена для работы с&nbsp;тяжелыми красками: маслом, акрилом, темперой, гаушью. Завод художественных красок &quot;Невская палитра&quot;‎ выпустил 8&nbsp;новых цветов масляных красок &quot;Мастер-Класс&quot;‎. Палитру пополнили оттенки: венецианская красная, сиреневый хинакридон, красный хинакридон, золотисто-желтая, фиолетовый...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_2.jpg"
+                            alt="Все цвета акварельных красок в тубе"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">Все цвета акварельных красок в тубе</a></h3>
+                          <p>
+                              Завод художественных красок &quot;Невская палитра&quot;‎ выпустил все цвета акварельных красок &quot;Белые ночи&quot;‎ ‎в тубах! <br />
+                              Теперь писать акварельными красками &quot;Белые ночи&quot;‎ стало еще удобнее...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_3.jpg"
+                            alt="Новинка 2017 года"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">Новинка 2017 года</a></h3>
+                          <p>
+                              Завод художественных красок &laquo;Невская палитра&raquo; рад представить главную новинку 2017 года&nbsp;&mdash; пастообразные акварельные краски &quot;Белые ночи&laquo;‎. <br />
+                              Акварельные краски &laquo;Белые ночи&raquo; в&nbsp;тубах изготавливаются из&nbsp;высококачественных пигментов и&nbsp;связующего на&nbsp;основе гуммиарабика...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_4.jpg"
+                            alt="Ассортимент Decola пополнился новыми контурами"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">Ассортимент Decola пополнился новыми контурами</a></h3>
+                          <p>
+                              В&nbsp;коллекцию тематических наборов универсальных контуров вошли наборы &quot;Мохито&quot;‎, &quot;Шебби-шик&quot;‎, &quot;Гламур&quot;‎. <br />
+                              В&nbsp;составе каждого набора 4&nbsp;контура, цвета которых идеально сочетаются между собой. Именно поэтому такие наборы станут отличным подарком...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_5.jpg"
+                            alt="Новые материалы для детского творчества"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">Новые материалы для детского творчества</a></h3>
+                          <p>
+                              Представляем новинку ассортимента&nbsp;&mdash; наборы акриловых красок по&nbsp;ткани для детского творчества &quot;Цветик&quot;‎<br />
+                              Краски по&nbsp;ткани &quot;Цветик&quot;‎ предназначены для росписи натуральных тканей (хлопок, лен). Создают плотное красочное покрытие как на&nbsp;светлых, так&nbsp;и...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6to12">
+                    <div class="card-wrapper">
+                      <div class="card card-news">
+                        <div class="card-image">
+                          <img
+                            class="olazy"
+                            data-src="./images/news/news_6.jpg"
+                            alt="Арт-спреи от Decola"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h3><a href="./news-inner.html">Арт-спреи от Decola</a></h3>
+                          <p>
+                              Акриловые краски Decola &quot;Арт-спрей&quot;‎ идеально подходят для трафаретной живописи, могут наноситься на&nbsp;любые виды поверхности (бумага,картон, грунтованный холст, дерево, металл и&nbsp;др.). <br />
+                              Яркие цвета можно смешивать. Быстро сохнут, светостойкие...
+                          </p>
+                          <a class="btn btn-wide bg-red" href="./news-inner.html"><span>Подробнее</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-bottom">
+                <span class="news-count">Вы посмотрели 6 из 83 новостей</span>
+                <button class="btn btn-wide bg-red centered"><span>Загрузить еще</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER START -->
+      <footer class="page-footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="footer-logo"><img src="./images/logo-rus.svg" alt="Невская палитра"></div>
+              <nav class="footer-nav">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">О компании</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Каталог</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Бренды</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Партнерам</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Клуб художников</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Новости</a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Контакты</a></li>
+                  <li class="footer-menu-item">
+                    <div class="socials">
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="footer-bottom-left">
+                <span class="copyright">&copy; 2005—2019 Завод художественных красок «Невская палитра»</span>
+                <a class="madeby" href="">
+                  <img src="./images/logo_kdm.svg" alt="Клиника доброго маркетолога">
+                  <span>Сделано в&nbsp;&laquo;Клинике доброго маркетолога&raquo;</span>
+                </a>
+              </div>
+              <div class="footer-bottom-right">
+                <form class="mailing-form">
+                  <input type="email" placeholder="Эл. почта">
+                  <button class="btn btn-wide bg-red" type="submit"><span>Подписаться на рассылку</span></button>
+                </form>
+                <span class="footer-privacy">Нажимая «Подписаться»‎, вы соглашаетеесь с <a href="#">Политикой конфиденциальности</a> и обработкой персональных данных</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
