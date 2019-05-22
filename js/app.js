@@ -151,8 +151,8 @@ $(function() {
       slidesToScroll: 1,
       slidesToShow: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
-      speed: 1000
+      autoplaySpeed: 2500,
+      speed: 800
     });
 
   } else {
