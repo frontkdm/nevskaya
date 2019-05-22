@@ -16,6 +16,34 @@
       width: 220px;
     }
   }
+
+  div.timeline-item {
+    margin: 0!important;
+  }
+
+  .timeline-wrapper {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .timeline {
+    flex-wrap: nowrap;
+    margin: 0 -15px;
+
+    &::before {
+      width: 9999px;
+    }
+    .timeline-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 15px;
+      &-text {
+        transform: translateX(60px);
+      }
+  
+    }
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -45,6 +73,17 @@
   .col-6to12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .card-news {
+
+    .btn {
+      margin-top: 25px;
+    }
+
+    .card-body {
+      min-height: auto;
+    }
   }
 
   .col-4to12 {
@@ -157,11 +196,43 @@
     &:last-child { margin-bottom: 20px; }
   }
 
+  .card-big {
+    min-height: auto;
+    padding: 50px 30px;
+    background-position: -175px;
+
+    .btn {
+      margin-top: 50px;
+    }
+  }
+
+  .slider-btn[data-dir="Next"],
+  .slider-btn[data-dir="Prev"] {
+    transform: translateX(0);
+  }
+
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .intro-section {
     height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts-body {
+    flex-wrap: wrap;
+  }
+
+  .contacts-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .contacts-depts {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -308,6 +379,42 @@
   }
 
   .media-title {
+    font-size: 36px;
+  }
+
+  .about-slider-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-slider {
+    width: 100%;
+    min-height: 350px;
+    height: 350px;
+    order: 1;
+    margin-bottom: 20px;
+    &-item {
+      min-height: auto;
+      max-height: auto;
+      height: 350px;
+      img { object-fit: cover; }
+    }
+
+  }
+
+  .slider-btn[data-dir="Next"] {
+    position: static;
+    order: 3;
+  }
+
+  .slider-btn[data-dir="Prev"] {
+    position: static;
+    order: 2;
+    margin-right: 10px;
+  }
+
+  .timeline-wrapper h2 {
     font-size: 36px;
   }
 
@@ -513,6 +620,18 @@
     font-size: 65px;
   }
 
+  div.news-title {
+    h1 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  .contacts-dept {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -573,6 +692,14 @@
     margin-top: 0;
   }
 
+  .benefit-partners h3 {
+    min-height: 5em;
+  }
+
+  .card-headless h3 {
+    font-size: 24px;
+  }
+
 }
 
 @media screen and (max-width: 460px) {
@@ -580,7 +707,11 @@
   .card-video-body { min-height: 212px; }
 
   .section-title h1 {
-    font-size: 44px;
+    font-size: 36px;
+  }
+
+  .badge-title {
+    font-size: 16px;
   }
 
 }

@@ -144,5 +144,20 @@ $(function() {
     $(this).toggleClass('is-active')
   })
 
+
+  if ( window.matchMedia('(max-width: 1280px)').matches ) {
+
+    $('.timeline').slick({
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 1000
+    });
+
+  } else {
+    if ( $('.timeline').hasClass('animated') ) { $('.timeline').removeClass('animated'); };
+  }
+
   console.log('The main script is ready')
 });
