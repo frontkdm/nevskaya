@@ -59,13 +59,21 @@ $(function() {
   });
 
   if ( $('.reviews-slider-item').length > 2 ) {
-    $('.reviews-slider').slick({
+    $('.simple-slider').slick({
       arrows: false,
       dots: true,
       slidesToShow: 2,
       lazyLoad: 'ondemand',
       appendDots: '.simple-slider-wrapper',
-      dotsClass: 'slider-dots simple-slider-dots'
+      dotsClass: 'slider-dots simple-slider-dots',
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     })
   }
 
