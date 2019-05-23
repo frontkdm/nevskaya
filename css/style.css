@@ -2958,7 +2958,7 @@ div.align-left {
     line-height: 170px;
   }
   .page-header {
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .header-nav {
     display: none;
@@ -3025,13 +3025,17 @@ div.align-left {
   }
   .news-slider-wrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    max-width: 65%;
     margin-bottom: 20px;
   }
   .news-slider-wrapper::before {
     width: 100%;
+  }
+  .news-slide-image {
+    width: 300px;
+    height: 250px;
   }
   .page-slider {
     max-width: 96%;
@@ -3339,6 +3343,26 @@ div.align-left {
   .timeline-wrapper h2 {
     font-size: 36px;
   }
+  .news-slider-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .news-slider-wrapper::before {
+    width: 100%;
+  }
+  .instagram-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .news-slide-image {
+    width: 400px;
+    height: 290px;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-slider {
@@ -3381,12 +3405,6 @@ div.align-left {
     margin-left: 0;
     margin-top: 20px;
     max-width: 90%;
-  }
-  .instagram-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
   }
   .section-bottom {
     margin-top: 20px;
@@ -3445,6 +3463,9 @@ div.align-left {
   .paint-description-links .btn:first-child {
     margin-right: 10px;
     margin-bottom: 0;
+  }
+  .modal-form {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape) {
@@ -3628,6 +3649,16 @@ div.align-left {
   }
   .card-headless h3 {
     font-size: 24px;
+  }
+  .form-group-flexed {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-group-flexed .form-group {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 460px) {
