@@ -1,3 +1,13 @@
+if ('NodeList' in window && !NodeList.prototype.forEach) {
+  console.info('polyfill for IE11');
+  NodeList.prototype.forEach = function (callback, thisArg) {
+    thisArg = thisArg || window;
+    for (let i = 0; i < this.length; i++) {
+      callback.call(thisArg, this[i], i, this);
+    }
+  };
+}
+
 $(function() {
 
   const headerSearch = $('.header-search'); // <== Кешируем ноду
@@ -92,14 +102,20 @@ $(function() {
     aboutSlider.slick('slick'+dir);
   })
 
+  let allowHeaderToScroll = true;
+
   function detectVerticalScroll(e) {
     if (e.target.classList[0] === 'filter-options-item') return;
     if (e.target.classList[0] === 'modal-wrapper') return;
     if (e.target.classList[0] === 'modal') return;
 
-    e.originalEvent.deltaY >= 0 ?  
-      $('.page-header').addClass('hide-up') :
-      $('.page-header').removeClass('hide-up');
+    if(allowHeaderToScroll) {
+      e.originalEvent.deltaY >= 0 ?  
+        $('.page-header').addClass('hide-up') :
+        $('.page-header').removeClass('hide-up');
+    }
+
+    
   }
 
   $('body').on('wheel mousewheel', detectVerticalScroll);
@@ -141,7 +157,11 @@ $(function() {
   });
 
   $('.mobile-burger').click(function() {
+    allowHeaderToScroll = !allowHeaderToScroll;
     $(this).toggleClass('is-active')
+    $('body').toggleClass('noflow');
+    $('.mobile-menu-wrapper').toggleClass('move-left') 
+
   })
 
 

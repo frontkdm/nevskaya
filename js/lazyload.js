@@ -25,8 +25,8 @@
             if ( this.parentNode.querySelector('.spinner') !== null ) {
               this.parentNode.querySelector('.spinner').remove()
             }
+            io.unobserve(target);
           }
-          io.unobserve(target);
         }
       })
     }, options);
@@ -39,8 +39,15 @@
     images.forEach(image => {
       const src = image.dataset.src
       image.src = src;
+      image.onload = function() {
+        this.classList.add('loaded');
+        if ( this.parentNode.querySelector('.spinner') !== null ) {
+          this.parentNode.removeChild( this.parentNode.querySelector('.spinner') )
+          // this.parentNode.querySelector('.spinner').remove()
+        }
+      }
     });
   }
 
   console.log('Lazyload is ready');
-})()
+})();

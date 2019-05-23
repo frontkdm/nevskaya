@@ -909,6 +909,8 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 0 70px;
+  flex: 0 0 100%;
+  max-width: 100%;
 
   &:last-child { margin-bottom: 0; }
 
@@ -1162,6 +1164,7 @@
 
 .benefit-partners {
   h3 {
+    width: 100%;
     font-size: 18px;
   }
 }
@@ -1380,6 +1383,23 @@
     text-decoration: none;
     font-size: 18px;
     color: #9a9a9a;
+  }
+
+}
+
+
+// Стили для IE 11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .brands-intro {
+    background-attachment: scroll;
+  }
+
+  .intro-title {
+    width: 100%;
+    background-image: none;
+    // font-size: 230px;
+    color: #F7A298;
+    letter-spacing: 2px;
   }
 
 }

@@ -25,15 +25,11 @@
       })
     }, options);
   
-    observables.forEach(observable => {
-      io.observe(observable);
-    })
+    observables.forEach(observable => io.observe(observable));
 
   } else {
-    observables.forEach(obs => {
-      obs.classList.add('fade-down');
-    });
+    observables.forEach(obs =>  obs.classList.add('fade-down'));
   }
 
   console.log('Observable is ready');
-})()
+})();

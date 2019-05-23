@@ -34,14 +34,14 @@ gulp.task('prefixer', () =>
 
 gulp.task('concat', () => {
   gulp.src('js/*.js')
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('./js'))
 });
 
 gulp.task('babel', () => {
-  gulp.src('dist/js/app.js')
+  gulp.src('js/main.js')
     .pipe(babel())
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./js'))
 });
 
 
