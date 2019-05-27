@@ -18,18 +18,12 @@
 
     <link rel="preload" href="./fonts/fonts.css" as="font">
     <link rel="stylesheet" href="./fonts/fonts.css" />
-
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Невская палитра</title>
   </head>
   <body>
-    <!-- <button class="btn bg-red"></button>
-  <button class="btn bg-blue"></button>
-  <button class="btn bg-green"></button>
-  <button class="btn bg-orange"></button>
-  <button class="btn btn-wide bg-orange"><span>Смотреть каталог</span></button> -->
-
+   
     <div id="webpage">
 
       <!-- MODAL START -->
@@ -187,9 +181,9 @@
               </div>
 
               <div class="socials">
-                <a href="#" class="btn btn-small bg-red"></a>
-                <a href="#" class="btn btn-small bg-red"></a>
-                <a href="#" class="btn btn-small bg-red"></a>
+                <a href="#" class="btn btn-small bg-red"><svg width="30" height="18"><use xlink:href="./images/icons/sprite.svg#icon_vk" /></svg></a>
+                <a href="#" class="btn btn-small bg-red"><svg width="15" height="27"><use xlink:href="./images/icons/sprite.svg#icon_facebook" /></svg></i></a>
+                <a href="#" class="btn btn-small bg-red"><svg width="25" height="25"><use xlink:href="./images/icons/sprite.svg#icon_instagram" /></svg></i></a>
               </div>
             </div>
           </div>
@@ -219,7 +213,7 @@
                           <p>Краски для разного вида художественных работ</p>
                         </div>
                       </div>
-                      <a href="./catalog-inner.html" class="btn btn-small bg-red card-link with-arrow-right"></a>
+                      <a href="./catalog-inner.html" class="btn btn-small bg-red card-link"><svg width="30" height="18"><use xlink:href="./images/icons/sprite.svg#icon_arrow_right" /></svg></a>
                     </div>
                   </div>
                   <div class="col-4to12">
@@ -244,7 +238,7 @@
                           </p>
                         </div>
                       </div>
-                      <a href="./catalog-inner.html" class="btn btn-small bg-blue card-link with-arrow-right"></a>
+                      <a href="./catalog-inner.html" class="btn btn-small bg-blue card-link"><svg width="30" height="18"><use xlink:href="./images/icons/sprite.svg#icon_arrow_right" /></svg></a>
                     </div>
                   </div>
                   <div class="col-4to12">
@@ -267,7 +261,7 @@
                           </p>
                         </div>
                       </div>
-                      <a href="./catalog-inner.html"  class="btn btn-small bg-green card-link with-arrow-right"></a>
+                      <a href="./catalog-inner.html"  class="btn btn-small bg-green card-link"><svg width="30" height="18"><use xlink:href="./images/icons/sprite.svg#icon_arrow_right" /></svg></a>
                     </div>
                   </div>
                   <div class="col-4to12">
@@ -288,7 +282,7 @@
                           </p>
                         </div>
                       </div>
-                      <a href="./catalog-inner.html" class="btn btn-small bg-orange card-link with-arrow-right"></a>
+                      <a href="./catalog-inner.html" class="btn btn-small bg-orange card-link"><svg width="30" height="18"><use xlink:href="./images/icons/sprite.svg#icon_arrow_right" /></svg></a>
                     </div>
                   </div>
                 </div>
@@ -664,9 +658,9 @@
                   <li class="footer-menu-item"><a class="footer-menu-link" href="#">Контакты</a></li>
                   <li class="footer-menu-item">
                     <div class="socials">
-                      <a href="#" class="btn btn-thin bg-red"></a>
-                      <a href="#" class="btn btn-thin bg-red"></a>
-                      <a href="#" class="btn btn-thin bg-red"></a>
+                      <a href="#" class="btn btn-thin bg-red"><svg width="15" height="10"><use xlink:href="./images/icons/sprite.svg#icon_vk" /></svg></a>
+                      <a href="#" class="btn btn-thin bg-red"><svg width="8" height="15"><use xlink:href="./images/icons/sprite.svg#icon_facebook" /></svg></i></a>
+                      <a href="#" class="btn btn-thin bg-red"><svg width="14" height="14"><use xlink:href="./images/icons/sprite.svg#icon_instagram" /></svg></i></a>
                     </div>
                   </li>
                 </ul>
@@ -694,8 +688,7 @@
                
               </div>
             </div>
-          </div>
-          
+          </div>    
         </div>
       </footer>
       <!-- FOOTER END -->
@@ -703,6 +696,8 @@
     </div>
 
     <!-- SCRIPTS -->
+    <script src="./js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
     <script src="./bower_components/slick-carousel/slick/slick.min.js"></script>
     <!-- <script src="./js/lazyload.js"></script> -->

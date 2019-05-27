@@ -52,7 +52,6 @@
   background-size: 2200px;
   background-position: center center;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   margin: 20px auto;
   font-size: 306px;
   line-height: 255px;
@@ -74,6 +73,11 @@
 
   > * + * {
     margin-left: 20px;
+  }
+
+  svg {
+    // width: 24px;
+    fill: #fff;
   }
 
 }
@@ -1174,14 +1178,14 @@
   CLUB PAGE STYLES
 
 ==================================*/
-.club-intro {
-  h1 {
-    // font-size: 100px;
-    // line-height: 1;
-    // text-transform: uppercase;
-    // font-weight: 900;
-  }
-}
+// .club-intro {
+//   h1 {
+//     font-size: 100px;
+//     line-height: 1;
+//     text-transform: uppercase;
+//     font-weight: 900;
+//   }
+// }
 
 .club-navigation {
   display: flex;
@@ -1385,8 +1389,54 @@
     color: #9a9a9a;
   }
 
+  svg { fill: #fff; }
+
 }
 
+.page-404 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-404 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  // height: 100%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    height: 100%;
+  }
+  p {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .btn {
+    margin-top: auto;
+  }
+}
+
+.title-404 {
+  margin-top: auto;
+  background-image: url(../images/big-title-splash.png);
+  background-size: 2200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  overflow: hidden;
+  h1 {
+    margin-bottom: 0;
+    font-size: 530px;
+    letter-spacing: .05em;
+    font-weight: 900;
+    line-height: 400px;
+  }
+}
 
 // Стили для IE 11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1394,12 +1444,17 @@
     background-attachment: scroll;
   }
 
-  .intro-title {
+  .intro-title, .title-with-image {
     width: 100%;
     background-image: none;
-    // font-size: 230px;
     color: #F7A298;
     letter-spacing: 2px;
   }
+
+  .title-404 {
+    background-image: none;
+    color: #F7A298;
+  }
+
 
 }
