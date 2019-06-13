@@ -1525,6 +1525,50 @@ div.align-left {
       -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
+.col-4to12:nth-child(n) .card-link,
+.col-3to12:nth-child(n) .card-link {
+  background: -webkit-linear-gradient(10.58deg, #F7A298 7.98%, #F8D4B5 87.2%);
+  background: -o-linear-gradient(10.58deg, #F7A298 7.98%, #F8D4B5 87.2%);
+  background: linear-gradient(79.42deg, #F7A298 7.98%, #F8D4B5 87.2%);
+  color: #fff;
+}
+.col-4to12:nth-child(n) .card-link:hover,
+.col-3to12:nth-child(n) .card-link:hover {
+  color: #F7A298 !important;
+}
+.col-4to12:nth-child(2n) .card-link,
+.col-3to12:nth-child(2n) .card-link {
+  background: -webkit-linear-gradient(10.58deg, #9488FC 7.98%, #CD98F7 87.2%);
+  background: -o-linear-gradient(10.58deg, #9488FC 7.98%, #CD98F7 87.2%);
+  background: linear-gradient(79.42deg, #9488FC 7.98%, #CD98F7 87.2%);
+  color: #fff;
+}
+.col-4to12:nth-child(2n) .card-link:hover,
+.col-3to12:nth-child(2n) .card-link:hover {
+  color: #9488FC !important;
+}
+.col-4to12:nth-child(3n) .card-link,
+.col-3to12:nth-child(3n) .card-link {
+  background: -webkit-linear-gradient(10.58deg, #81C0D0 7.98%, #9BD5D0 87.2%);
+  background: -o-linear-gradient(10.58deg, #81C0D0 7.98%, #9BD5D0 87.2%);
+  background: linear-gradient(79.42deg, #81C0D0 7.98%, #9BD5D0 87.2%);
+  color: #fff;
+}
+.col-4to12:nth-child(3n) .card-link:hover,
+.col-3to12:nth-child(3n) .card-link:hover {
+  color: #81C0D0 !important;
+}
+.col-4to12:nth-child(4n) .card-link,
+.col-3to12:nth-child(4n) .card-link {
+  background: -webkit-linear-gradient(10.58deg, #FCD17D 7.98%, #F4AA53 87.2%);
+  background: -o-linear-gradient(10.58deg, #FCD17D 7.98%, #F4AA53 87.2%);
+  background: linear-gradient(79.42deg, #FCD17D 7.98%, #F4AA53 87.2%);
+  color: #fff;
+}
+.col-4to12:nth-child(4n) .card-link:hover,
+.col-3to12:nth-child(4n) .card-link:hover {
+  color: #FCD17D !important;
+}
 .card {
   position: relative;
   background-color: #fff;
