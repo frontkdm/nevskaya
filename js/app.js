@@ -49,17 +49,19 @@ $(function() {
     
   });
 
-  $('.page-slider').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    appendDots: '.slider-dots-wrapper',
-    dotsClass: 'slider-dots',
-    cssEase: 'ease',
-    fade: true,
-    lazyload: 'ondemand'
-  });
+  if ($('.page-slider').length) {
+    $('.page-slider').slick({
+      arrows: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendDots: '.slider-dots-wrapper',
+      dotsClass: 'slider-dots',
+      cssEase: 'ease',
+      fade: true,
+      lazyload: 'ondemand'
+    });
+  }
 
   $('.filter-options-item').click(function(e) {
     const label = $(this).parent().siblings('label');
@@ -167,49 +169,53 @@ $(function() {
   const svgPath = document.querySelector('.letters');
   const svgPath2 = document.querySelector('.background');
 
-  const tl = anime.timeline({
-    easing: 'easeInOutQuad',
-    direction: 'alternate',
-    duration: 2500,
-    loop: true
-  })
+  if (anime) {
+    const tl = anime.timeline({
+      easing: 'easeInOutQuad',
+      direction: 'alternate',
+      duration: 2500,
+      loop: true
+    })
 
-  tl
-    .add({
-      targets: svgPath2,
-      loop: false,
-      fill: ['rgba(255, 255, 255, 0)', '#d24a43'],
-      easing: 'easeInOutQuad',
-      duration: 800,
-    })
-    .add({
-      targets: svgPath,
-      loop: true,
-      stroke: '#fff',
-      // duration: 2000
-    })
-    .add({
-      targets: svgPath,
-      loop: true,
-      direction: 'normal',
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutQuad',
-      // duration: 2000
-    })
-    .add({
-      targets: svgPath,
-      fill: ['rgba(255, 255, 255, 0)', '#fff'],
-      direction: 'normal',
-      easing: 'linear',
-      duration: 300,
-      delay: (el, i) => { return i * 5000 }
-    })
-    .add({
-      duration: 1500,
-    })
-    .add({
-      duration: 1500,
-    })
+    tl
+      .add({
+        targets: svgPath2,
+        loop: false,
+        fill: ['rgba(255, 255, 255, 0)', '#d24a43'],
+        easing: 'easeInOutQuad',
+        duration: 800,
+      })
+      .add({
+        targets: svgPath,
+        loop: true,
+        stroke: '#fff',
+        // duration: 2000
+      })
+      .add({
+        targets: svgPath,
+        loop: true,
+        direction: 'normal',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutQuad',
+        // duration: 2000
+      })
+      .add({
+        targets: svgPath,
+        fill: ['rgba(255, 255, 255, 0)', '#fff'],
+        direction: 'normal',
+        easing: 'linear',
+        duration: 300,
+        delay: (el, i) => { return i * 5000 }
+      })
+      .add({
+        duration: 1500,
+      })
+      .add({
+        duration: 1500,
+      })
+  }
+
+  
 
 
   if ( window.matchMedia('(max-width: 1280px)').matches ) {
